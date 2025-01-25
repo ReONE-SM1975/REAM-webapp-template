@@ -1,0 +1,88 @@
+.dropdown {
+    font-family: "Inter", sans-serif; 
+}
+
+.dropdown-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+    cursor: pointer;
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown li {
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-links {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    width: 215px;
+    padding-left: 0px;
+    background-color: white;
+}
+
+.dropdown .dropdown-links li {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.dropdown .dropdown-links li a:hover {
+    padding-left: 10px;
+    color: #5f03f4;
+    border-left: 2px solid #5f03f4;
+    transition: all 0.3s ease;
+}
+
+.dropdown .dropdown-links a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-links li a {
+    transition: all 0.5s ease;
+}
+
+.dropdown .arrow-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+}
+
+.dropdown li:hover > .dropdown-links, .dropdown li .dropdown-links:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.dropdown li:hover .arrow-down {
+    transform: rotate(180deg);
+}
+
+/* https://cssnippets.shefali.dev/ */
